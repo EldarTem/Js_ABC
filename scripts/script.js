@@ -1,2 +1,3 @@
-let a = 2 * (8 / 4);
-alert(a); 
+let a = 1.5;
+let b = 0.75;
+alert(a + b); 
