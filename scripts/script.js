@@ -1,16 +1,4 @@
-let a;
-alert(a);
-
-let b = null;
-alert(b); 
-
-let c = true;
-alert(c); 
-
-let d = false;
-alert(d); 
-
-alert('abc' * 3); 
-
-alert( 10 / 0);
-alert(-10 / 0); 
+let num1 = 123;
+let num2 = 456;
+let num3 = 789;
+console.log(num1, num2, num3);
