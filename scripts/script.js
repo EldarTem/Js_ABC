@@ -1,2 +1,4 @@
-let str = 'dsfhdvjsdfvdfvsdvfj';
-alert(str.length);
+let str = `a
+b
+c`
+alert(str);
