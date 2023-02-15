@@ -1,7 +1,15 @@
-let num = parseInt('5px');
-let num1 = parseInt('6px');
-alert(num +num1);
+let num1 = 11;
+let num2 = 22;
 
-let Num = parseFloat('5.5px');
-let Num1 = parseFloat('6.25px');
-alert(Num + Num1 + 'px');
+alert(String(num1) + String(num2));
+
+let Num = 12345678910;
+alert(String(Num).length);
+
+
+let number = 1234567;
+let str2 = String(num);
+
+let number2 = 123;
+let str3 = String(num);
+alert(str2.length + str3.length); 
