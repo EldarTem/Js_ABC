@@ -1,4 +1,2 @@
-const PI = 3.14;
-let r = 5;
-let s = PI * (r ** 2);
-alert(s);
+let a = '' + 3 + 1;
+alert(a); 
