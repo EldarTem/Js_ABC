@@ -1,4 +1,4 @@
-let num1 = 123;
-let num2 = 456;
-let num3 = 789;
-console.log(num1, num2, num3);
+const PI = 3.14;
+let r = 5;
+let s = PI * (r ** 2);
+alert(s);
