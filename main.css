@@ -1,0 +1,25 @@
+.body {
+    color: rgba(247, 182, 182, 0.64);
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+  }
+  
+  .main {  
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    background-color:rgba(212, 59, 59, 0.5);;
+    border-radius: 40px;
+    margin-left: 30px;
+  }
+  p {
+    color: white;
+    font-size: large;
+  }
+  div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
