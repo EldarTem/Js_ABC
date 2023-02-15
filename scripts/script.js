@@ -1,13 +1,5 @@
-let obj = {
-	'1a': 1,
-	'b2': 2,
-	'с-с': 3,
-	'd 4': 4,
-	'e5': 5
-};
-
-console.log(obj['1a']);
-console.log(obj.b2);
-console.log(obj['c-c']);
-console.log(obj['d 4']);
-console.log(obj.e5);
+let obj = {};
+obj.a = 1;
+obj.b = 2;
+obj.c = 3;
+console.log(obj);
