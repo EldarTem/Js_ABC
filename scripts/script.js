@@ -1,13 +1,13 @@
-let age = prompt('Ваш возраст?');
-alert('Ваш возраст: ' + age);
+document.write('В начале КИПУ, а дальше весь мир! <br>');
 
-let num1 = prompt('Введите первое число');
-let num2 = prompt('Введите второе число');
-alert(Number(num1) + Number(num2));
+document.write('<i>В начале КИПУ, а дальше весь мир!</i><br>');
 
-let a = prompt('Введите сторону квадрата');
-alert('Площадь квадрата: ' + (a * a));
+let str = 'курсив';
+document.write('<i>' + str + '</i>');
+document.write('<br>');
 
-let d = prompt('Введите длину прямоугольника');
-let sh = prompt('Введите ширину прямоугольника');
-alert(Number(d*2) + Number(sh*2));
+document.write('1<br>');
+document.write('2<br>');
+document.write('3<br>');
+document.write('4<br>');
+document.write('5<br>');
