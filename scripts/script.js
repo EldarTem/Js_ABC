@@ -1,2 +1,2 @@
-let str = "Темиров";
+let str = 'hello' + ' ' + 'world' + '!'; 
 alert(str); 
