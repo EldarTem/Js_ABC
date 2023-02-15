@@ -1,2 +1,3 @@
-let a = '' + 3 + 1;
-alert(a); 
+let a = 2;
+let b = 3;
+alert(a + b);
