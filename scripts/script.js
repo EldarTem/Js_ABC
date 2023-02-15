@@ -1,5 +1,3 @@
-let arr = [1, 2, 3];
-console.log(arr);
-
-let arr1 = ['a', 'b', 'c'];
-console.log(arr1);
+let arr = ['kipu', 'kfu', 'sevgu'];
+console.log(arr.length) 
+console.log(arr[arr.length - 1])
