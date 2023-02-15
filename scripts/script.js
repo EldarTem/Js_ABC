@@ -1,2 +1,2 @@
-let str = 'hello' + ' ' + 'world' + '!'; 
-alert(str); 
+let str = 'dsfhdvjsdfvdfvsdvfj';
+alert(str.length);
