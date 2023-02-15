@@ -1,3 +1,3 @@
-let a = 456;
-let b = -a; 
-alert(b); 
+let a = 13;
+let b = 5;
+alert(a % b);
