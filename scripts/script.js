@@ -1,45 +1,19 @@
-let num1 = 1;
-let num2 = 2;
-alert('сумма: ' + num1 + num2); 
+alert(60 * 60 * 24); //Найдите количество секунд в сутках.
 
-let a = 1;
-let b = 2;
-alert(a + b);
+alert(60 * 60 * 24 * 30); //Найдите количество секунд в 30 сутках.
 
-let num = '123';
-let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
-alert(sum);
+alert(60 * 60 * 24 * 365); //Найдите количество секунд в году.
 
-let num3 = '123';
-alert(num3[0]);
+alert(60 * 24); //Найдите количество минут в сутках.
 
-let plus = 0;
-alert(++plus);
+alert(60 * 24 * 365); //Найдите количество минут в году.
 
-let m = '123';
-alert(m.length);
+alert(1024 ** 2); //Найдите количество байт в мегабайте.
 
-let so = 24 / 60 / 60;
-alert(so.toFixed(4));
+alert(1024 ** 3); //Найдите количество байт в гигабайте.
 
-let box = 123;
-let str = String(box);
-alert(str.length);
+alert(1024 ** 3 * 10); //Найдите количество байт в 10 гигабайтах.
 
-let abc = 123;
-let str1 = String(abc);
-alert(str1[str1.length-1]);
+alert(1024 ** 4); //Найдите количество байт в терабайте.
 
-let nom = 123;
-let set = String(nom);
-alert(set.length);  
-
-let x = '123';
-let y = '456';
-let z = Number(x) + Number(y);
-alert(z);
-
-let aaa = 1;
-let bbb = 2;
-let ccc = 3;
-alert(Number(aaa + bbb + ccc));
+alert(1024 ** 3); //Найдите количество килобайт в терабайте.
