@@ -1,13 +1,27 @@
-let obj1 = {x: 1, y: 2, z: 3};
-console.log(obj1[x]);
+let test = 1;
+if (test > 10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
 
-let obj2 = {x: 1, y: 2, z: 3};
-let key = 'x';
-console.log(obj2.key);
+let test1 = 1;
+if (test1 < 10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
 
-let obj3 = {x: 1, y: 2, z: 3};
-let sum = obj3[x] + obj3[y] + obj3[x];
-console.log(obj3);
+let test2 = 1;
+if (test2 <= 10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
 
-let obj4 = {x: 1, y: 2, z: 3};
-console.log(obj4.length);
+let test3 = 1;
+if (test3 >= 10) {
+	console.log('+++'); 
+} else {
+	console.log('---');
+}
