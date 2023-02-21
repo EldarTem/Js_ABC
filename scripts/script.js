@@ -1,21 +1,11 @@
-let arr1 = [1, 2, 3];
-let arr2 = arr1;
+const arr = ['a', 'b', 'c'];
+arr[1] = '!';
+console.log(arr);
 
-arr1[0] = 'a';
-console.log(arr2); 
+const arr = ['a', 'b', 'c'];
+arr = [1, 2, 3];
+console.log(arr);
 
-let arr1 = [1, 2, 3];
-let arr2 = arr1;
-
-arr1[0] = 'a';
-arr2[1] = 'b';
-
-console.log(arr1);
-
-let arr1 = [1, 2, 3];
-let arr2 = arr1;
-
-arr1[0] = 'a';
-arr2[0] = 'b';
-
-console.log(arr2);
+const arr = ['a', 'b', 'c'];
+arr = ['a', 'b', 'c'];
+console.log(arr);
