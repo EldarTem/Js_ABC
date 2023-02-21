@@ -1,7 +1,7 @@
-let test = 'abc';
-
-if (test == 'abc') {
-	console.log('переменные равны'); 
+let test1 = '123';
+let test2 = 123;
+if (test1['123'] == test2) {
+	console.log(' равны'); 
 } else {
-	console.log('переменные не равны');
+	console.log(' не равны');
 }
