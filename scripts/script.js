@@ -1,19 +1,21 @@
-let test = {x: 1, y: 2, z: 3};
-console.log(test);
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
 
-let test1 = {x: 1, y: 2, z: 3};
-console.log(test1.x);
+arr1[0] = 'a';
+console.log(arr2); 
 
-let test3 = [1, 2, 3];
-console.log(test3);
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
 
-let test4 = [1, 2, 3];
-console.log(test4[1]);
+arr1[0] = 'a';
+arr2[1] = 'b';
 
-let test5 = [1, 2, 3];
-let test6 = 1;
-console.log(test5);
+console.log(arr1);
 
-let test7 = [1, 2, 3];
-let test8 = 1;
-console.log(test7[test8]);
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+
+arr1[0] = 'a';
+arr2[0] = 'b';
+
+console.log(arr2);
