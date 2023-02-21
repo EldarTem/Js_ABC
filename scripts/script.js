@@ -1,6 +1,3 @@
-console.log( typeof {x: 1, y: 2, z: 3} );
+console.log( Array.isArray([1, 2, 3]) );// выведет true
 
-console.log( typeof [1, 2, 3] );
-
-let arr = [1, 2, 3];
-console.log( typeof arr );
+console.log( Array.isArray({x: 1, y: 2, z: 3}) ); // выведет false
