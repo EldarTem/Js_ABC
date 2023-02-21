@@ -1,22 +1,20 @@
-let test1 = '3';
-let test2 = '3';	
-if (test1 != test2) {
+let num = 3;
+if (num > 5 && num < 0) {
 	console.log('+++');
 } else {
 	console.log('---');
 }
 
-let test3 = '3';
-let test4 = '3';
-if (test3 !== test4) {
+let num1 = 3;
+if (num1 >= 20 && num1 <= 10) {
 	console.log('+++');
 } else {
 	console.log('---');
 }
 
-let test5 = 3;
-let test6 = '3';	
-if (test5 !== test6) {
+let num2 = 3;
+let num3 = 3;
+if (num2 <= 1 && num3 >= 3) {
 	console.log('+++');
 } else {
 	console.log('---');
