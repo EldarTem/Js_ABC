@@ -15,7 +15,8 @@ if (num1 > 5 || (num1 > 0 && num1 < 3)) {
 }
 
 let num2 = 3;
-		
+	
+
 if (num2 == 9 || (num2 > 10 && num2 < 20) || (num2 > 20 && num2 < 30)) {
 	console.log('+++');
 } else {
