@@ -1,21 +1,17 @@
-// TASK 1
-let str = "babvcadxa";
-if (str[0] == "a") {
-  console.log('Cтрока начинается на символ "a"');
+// 1
+let num = 1234503;
+let str = String(num);
+let last = str[str.length - 1];
+
+if (last == 0) {
+  console.log("+++");
 } else {
-  console.log('Cтрока не начинается на символ "a"');
+  console.log("---");
 }
 
-// TASK 2
-if (str[str.length - 1] == "x") {
-  console.log('Cтрока начинается на символ "x"');
+// 2
+if (last == 0 || last == 2 || last == 4 || last == 6 || last == 8) {
+  console.log("Число четное");
 } else {
-  console.log('Cтрока не начинается на символ "x"');
-}
-
-// 3
-if (str[0] == "a" || str[0] == "b") {
-  console.log('Cтрока начинается на символ "a" или "b"');
-} else {
-  console.log('Cтрока не начинается на символ "a" или "b"');
+  console.log("Число нечетное");
 }
