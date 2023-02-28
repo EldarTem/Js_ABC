@@ -1,25 +1,8 @@
-let min = 10;
+let arr = [10, 23, 12];
 
-if (min >= 0 && min <= 19) {
-  console.log("1 четверть");
+if (arr.length == 3) {
+  let sum = arr.map((i) => (x += i), (x = 0)).reverse()[0];
+  alert(sum);
+} else {
+  alert("В массиве не 3 значения");
 }
-
-if (min >= 20 && min <= 39) {
-  console.log("2 четверть");
-}
-
-if (min >= 40 && min <= 59) {
-  console.log("3 четверть");
-  let min = 10;
-
-  if (min >= 0 && min <= 19) {
-	console.log("1 четверть");
-  }
-  
-  if (min >= 20 && min <= 39) {
-	console.log("2 четверть");
-  }
-  
-  if (min >= 40 && min <= 59) {
-	console.log("3 четверть");
-  }
