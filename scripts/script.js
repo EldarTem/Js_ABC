@@ -1,11 +1,15 @@
-let day = 12;
+let num = 33;
 
-if (day <= 10){
-    console.log("находится в первой декаде")
-} else if (day >= 11 && day <= 20){
-    console.log("находится во второй декаде")
-} else if (day >= 21 && day<=31){
-    console.log("находится в третьей декаде")
+if (num >= 10 && num <= 99){
+    var sum, abc = 0;
+    while (num) {
+        abc = num % 10;
+        num = (num - abc) / 10;
+        sum += abc;
+    }
+console.log(sum)
+} if (sum <= 9){
+    console.log("cумма однозначное число")
 } else {
-    console.log("число выходит за диапазон дозволенного")
+    console.log("cумма двухзначное число")
 }
