@@ -1,7 +1,9 @@
-let ok = confirm("Вы студент?");
-
-if (ok) {
-  alert("Вам на пары!");
+let age = 19;
+let adult;
+if (age >= 18) {
+  adult = true;
 } else {
-  alert("Спите дома)");
+  adult = false;
 }
+
+console.log(adult);
