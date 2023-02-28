@@ -1,17 +1,15 @@
 // 1
-let num = 1234503;
-let str = String(num);
-let last = str[str.length - 1];
+let num = 120;
 
-if (last == 0) {
-  console.log("+++");
+if (num % 2 == 0) {
+	console.log('Четное число');
 } else {
-  console.log("---");
+	console.log('Нечетное число');
 }
 
 // 2
-if (last == 0 || last == 2 || last == 4 || last == 6 || last == 8) {
-  console.log("Число четное");
+if (num % 3 == 0) {
+	console.log('Число кратно 3');
 } else {
-  console.log("Число нечетное");
+	console.log('Число не кратно 3');
 }
