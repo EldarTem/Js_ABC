@@ -1,19 +1,10 @@
-let lang = 'ru';
+let num = 2; // пусть здесь число 3
 
-switch (lang) {
-   case 'ru':
-	  console.log('рус');
-	  break;
-
-   case 'en':
-	  console.log('анг');
-	  break;
-
-   case 'de':
-	  console.log('нем');
-	  break;
-	  
-   default:
-	  console.log('язык не поддерживается');
-	  break;
+switch (num) {
+  case 1:
+    console.log(1);
+  case 2:
+    console.log(2); // сработает это
+  case 3:
+    console.log(3);
 }
