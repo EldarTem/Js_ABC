@@ -1,15 +1,19 @@
-let num = 33;
+let lang = 'ru';
 
-if (num >= 10 && num <= 99){
-    var sum, abc = 0;
-    while (num) {
-        abc = num % 10;
-        num = (num - abc) / 10;
-        sum += abc;
-    }
-console.log(sum)
-} if (sum <= 9){
-    console.log("cумма однозначное число")
-} else {
-    console.log("cумма двухзначное число")
+switch (lang) {
+   case 'ru':
+	  console.log('рус');
+	  break;
+
+   case 'en':
+	  console.log('анг');
+	  break;
+
+   case 'de':
+	  console.log('нем');
+	  break;
+	  
+   default:
+	  console.log('язык не поддерживается');
+	  break;
 }
