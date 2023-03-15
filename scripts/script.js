@@ -1,14 +1,28 @@
-function calcCube(x) {
-   return Math.pow(x, 3)
+function sqrt(num) {
+   return Math.sqrt(num);
+}
+
+function round(num) {
+   return num.toFixed(3);
 };
 
-let res = calcCube(3);
+let res1 = round(sqrt(2));
+console.log(res1);
 
-console.log(res)
+function sqrt1(num) {
+   return Math.sqrt(num);
+}
 
-function calcSqrt(x) {
-   return Math.sqrt(x)
+function sum1(num1, num2, num3) {
+   return num1 + num2 + num3;
 };
 
-let res2 = calcSqrt(3) + calcSqrt(4);
-console.log(res2)
+let res2 = sum1(sqrt1(2), sqrt1(3), sqrt1(4));
+console.log(res2);
+
+function round2(num) {
+   return num.toFixed(3);
+}
+
+res2 = round2(sum1(sqrt1(2), sqrt1(3), sqrt1(4)));
+console.log(res2);
