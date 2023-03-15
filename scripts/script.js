@@ -1,19 +1,13 @@
-let arr = ['a', 'b', 'c', 'd', 'e'];
-for (let i = 0; i <= arr.length - 1; i++) {
-	console.log(arr[i]);
+let arr = [2, 5, 9, 15, 1, 4];
+for (let elem of arr) {
+	if ((elem[i] > 3) && (elem[i] < 10)) {
+		console.log(elem);
+	}
 }
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
-for (let i = 1; i < arr.length-1; i++) {
-	console.log(arr[i]);
-}
-
-let arr3 = ["a", "b", "c", "d", "e"];
-for (let i = arr3.length - 1; i >= 0; i--) {
-	console.log(arr[i]);
-}
-
-let arr = ['a', 'b', 'c', 'd', 'e'];
-for (let i = 0; i <= arr.length-1; i++) {
-	console.log(arr[i]);
+let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+for (let key in obj) {
+  if (obj[key] % 2 == 0) {
+     console.log(obj[key]);
+  }
 }
