@@ -1,26 +1,4 @@
-let str = '';
-for (let i = 0; i < 5; i++) {
-	str += '-';
-}
-console.log(str);
-
-
-let str = '';
-for (let i = 1; i <= 9; i++) {
-	str += i;
-}
-console.log(str); 
-
-
-let str = '';
-for (let i = 9; i >= 1; i--) {
-	str += i;
-}
-console.log(str); 
-
-
-let str = '-';
-for (let i = 1; i <= 9; i++) {
-	str += i;
-}
-console.log(str); 
+const PI = 3.14;
+let r = 5;
+let s = PI * (r ** 2);
+alert(s);
