@@ -1,9 +1,22 @@
-let obj = {x: 1, y: 2, z: 3};
+let i = 1;
 
-for (let key in obj) {
-	console.log(key); // выведет ключи
+while (i <= 100) {
+	console.log(i);
+	i++;
 }
 
-for (let key in obj) {
-	console.log(obj[key]); // выведет элементы
+let i1 = 11;
+
+while (i1 <= 33) {
+	console.log(i1);
+	i1++;
 }
+
+let num = 13;
+let count = 0;
+
+while (num <= 1000) {
+  num = num * 3;
+  count++;
+}
+console.log( ' Количество итераций ${count} ');
