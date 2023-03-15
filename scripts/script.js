@@ -1,5 +1,9 @@
-let arr = ["a", "b", "c", "d", "e"];
+let obj = {x: 1, y: 2, z: 3};
 
-for (let elem of arr) {
-  console.log(elem);
+for (let key in obj) {
+	console.log(key); // выведет ключи
+}
+
+for (let key in obj) {
+	console.log(obj[key]); // выведет элементы
 }
