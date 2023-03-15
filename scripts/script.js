@@ -1,9 +1,15 @@
-let param1 = 1;
-let param2 = 5;
-let param3 = 3;
+function func(num = 5) {
+   console.log(num * num);
+}
 
-function three(a, b, c) {
-   return console.log(a + b + c);
+func(2); // 4
+func(3); // 9
+func(); // 25
+
+function func2(num1 = 0, num2 = 0) {
+   console.log(num1 + num2);
 };
 
-three(param1, param2, param3);
+func2(2, 3); // 5
+func2(3);    // 3
+func2();     // 0
