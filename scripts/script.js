@@ -1,28 +1,30 @@
-function sqrt(num) {
-   return Math.sqrt(num);
+function func(num) {
+   return num; // сработает это строк, все что ниже, не сработает
+
+   let res = num ** 2;
+   return res;
 }
 
-function round(num) {
-   return num.toFixed(3);
-};
+console.log(func(3)); // 3
 
-let res1 = round(sqrt(2));
-console.log(res1);
-
-function sqrt1(num) {
-   return Math.sqrt(num);
+function func(num) {
+   if (num <= 0) {
+      return Math.abs(num);
+   } else {
+      return num ** 2;
+   }
 }
 
-function sum1(num1, num2, num3) {
-   return num1 + num2 + num3;
-};
+console.log(func(10)); // 100
+console.log(func(-5)); // 5
 
-let res2 = sum1(sqrt1(2), sqrt1(3), sqrt1(4));
-console.log(res2);
+function func(num) {
+   if (num <= 0) {
+      return Math.abs(num); // если это условие false, то сработает второй return
+   }
 
-function round2(num) {
-   return num.toFixed(3);
+   return num ** 2; 
 }
 
-res2 = round2(sum1(sqrt1(2), sqrt1(3), sqrt1(4)));
-console.log(res2);
+console.log(func(10)); // 100
+console.log(func(-5)); // 5
