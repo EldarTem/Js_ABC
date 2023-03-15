@@ -1,7 +1,7 @@
-let num; // объявим переменную снаружи цикла
-
-for (let i = 1; i <= 9; i++) {
-	num = 3; // установим ей значение
+for (let i = 0; i <= 9; i++) {
+	let num = 3;
+	
+	for (let j = 0; j <= 9; j++) {
+		console.log(num); // выведет 3
+	}
 }
-
-console.log(num); // выведет 3
