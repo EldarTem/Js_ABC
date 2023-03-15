@@ -1,27 +1,13 @@
-let arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
-let arr2 = [1, 2, 3, 4, 5, 6, 7];
-let obj1 = {};
-for (let i = 0; i <= arr1.length - 1; i++) {
-    obj1[arr1[i]] = arr2[i];
+let obj1 = {x: 1, y: 2, z: 3};
+for (let key in obj1) {
+    obj1[key] = obj1[key] ** 2;
 }
 console.log(obj1);
 
 
 
-let obj21 = {a: 1, b: 2, c: 3, d: 4, e: 5};
-let obj22 = {};
-for (let i in obj21) {
-    if (obj21[i] % 2 == 0) {
-        obj22[i] = obj21[i];
-    }
+let obj2 = {x: 1, y: 2, z: 3};
+for (let key in obj2) {
+    obj2[key] += 1;
 }
-console.log(obj22);
-
-
-
-let obj31 = {a: 1, b: 2, c: 3, d: 4, e: 5};
-let obj32 = {};
-for (let i in obj31) {
-    obj32[obj31[i]] = i;
-}
-console.log(obj32);
+console.log(obj2);
