@@ -1,12 +1,7 @@
+let num; // объявим переменную снаружи цикла
+
 for (let i = 1; i <= 9; i++) {
-	for (let j = 1; j <= 3; j++) {
-		document.write(i);
-	}
+	num = 3; // установим ей значение
 }
 
-
-for (let i = 1; i <= 3; i++) {
-  for (let j = 1; j <= 3; j++) {
-     document.write('\n' + i + j + ' ');
-  };
-};
+console.log(num); // выведет 3
