@@ -1,15 +1,5 @@
-function cube(a) {
-   console.log(Math.pow(a, 3));
+function three(a, b, c) {
+   return console.log(a + b + c);
 }
 
-cube(2);
-
-function negative(b) {
-   if (b >= 0) {
-      console.log('+++')
-   } else {
-      console.log('---')
-   }
-}
-
-negative(-2);
+three(2, 2, 2);
