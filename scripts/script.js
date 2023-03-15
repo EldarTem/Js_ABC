@@ -1,21 +1,35 @@
+let arr = [2, 5, 9, 3, 1, 4];
 let res = 0;
-for (let i = 2; i <= 100; i++)
-  if (i % 2 == 0) {
-    res = res + i
-    console.log(elem);
+for (let elem of arr) {
+	res += elem;
+}
+console.log(res);
+
+
+let arr = [2, 5, 9, 3, 1, 4];
+let res = 0;
+for (let elem of arr) {
+  if (arr[i] % 2 == 0) {
+	res += elem;
+  }
+}
+console.log(res);
+
+
+let arr = [2, 5, 9, 3, 1, 4];
+let res = 0;
+for (let elem of arr) {
+	res += elem ** 2;
   }
 
+console.log(res);
 
+
+let arr = [2, 5, 9, 3, 1, 4];
 let res = 0;
-for (let i = 1; i <= 99; i++)
-  if (i % 2 === 0) {
-    res = res + i
-    console.log(elem);
+for (let elem of arr) {
+  if (arr[i] % 2 == 0) {
+	res = res * elem;
   }
-
-
-let res = 0;
-for (let i = 1; i <= 20; i++) {
-	res = res * i;
 }
 console.log(res);
