@@ -1,22 +1,19 @@
-let i = 1;
-
-while (i <= 100) {
-	console.log(i);
-	i++;
+let arr = ['a', 'b', 'c', 'd', 'e'];
+for (let i = 0; i <= arr.length - 1; i++) {
+	console.log(arr[i]);
 }
 
-let i1 = 11;
-
-while (i1 <= 33) {
-	console.log(i1);
-	i1++;
+let arr = ['a', 'b', 'c', 'd', 'e'];
+for (let i = 1; i < arr.length-1; i++) {
+	console.log(arr[i]);
 }
 
-let num = 13;
-let count = 0;
-
-while (num <= 1000) {
-  num = num * 3;
-  count++;
+let arr3 = ["a", "b", "c", "d", "e"];
+for (let i = arr3.length - 1; i >= 0; i--) {
+	console.log(arr[i]);
 }
-console.log( ' Количество итераций ${count} ');
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+for (let i = 0; i <= arr.length-1; i++) {
+	console.log(arr[i]);
+}
