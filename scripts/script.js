@@ -1,26 +1,13 @@
-let arr = ['a', 'b', 'c', 'd', 'e'];
-let flag1 = false;
-for (let i of arr) {
-    if (i == 'c') {
-        flag1 = true;
-        break;
-    }
-}
-if (flag1) {
-    console.log("+++");
-} else {
-    console.log('---');
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+let counter1 = 0;
+let counter2 = 0;
+for (let elem of arr) {
+	if (elem == '2') {
+		counter1++;
+	}
+  if (elem == '3') {
+		counter2++;
+	}
 }
 
-
-
-let num = 9;
-for (let i = 2; i <= num; i++) {
-    if (num % 1 == 0 && num % num == 0 && num & i != 0) {
-        console.log("Число " + num + " простое");
-        break;
-    } else {
-        console.log("Число " + num + " не простое");
-        break;
-    }
-}
+console.log(counter1, counter2);
