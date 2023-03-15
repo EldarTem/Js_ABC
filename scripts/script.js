@@ -1,30 +1,10 @@
 function func(num) {
-   return num; // сработает это строк, все что ниже, не сработает
+let sum = 0;
 
-   let res = num ** 2;
-   return res;
+for (let i = 1; i <= num; i++) {
+   sum += i;
+   return sum;
+}
 }
 
-console.log(func(3)); // 3
-
-function func(num) {
-   if (num <= 0) {
-      return Math.abs(num);
-   } else {
-      return num ** 2;
-   }
-}
-
-console.log(func(10)); // 100
-console.log(func(-5)); // 5
-
-function func(num) {
-   if (num <= 0) {
-      return Math.abs(num); // если это условие false, то сработает второй return
-   }
-
-   return num ** 2; 
-}
-
-console.log(func(10)); // 100
-console.log(func(-5)); // 5
+console.log(func(5)); // 1
