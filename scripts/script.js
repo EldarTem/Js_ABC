@@ -1,13 +1,15 @@
-function user () {
-   console.log('Eldar Temirov');
+function cube(a) {
+   console.log(Math.pow(a, 3));
 }
 
-user();
+cube(2);
 
-let cycle = (a, b) => {
-   for (; a <= b; a++) {
-      console.log(a);
+function negative(b) {
+   if (b >= 0) {
+      console.log('+++')
+   } else {
+      console.log('---')
    }
-};
+}
 
-cycle(1, 100)
+negative(-2);
