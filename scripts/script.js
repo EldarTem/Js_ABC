@@ -1,13 +1,26 @@
-let obj1 = {x: 1, y: 2, z: 3};
-for (let key in obj1) {
-    obj1[key] = obj1[key] ** 2;
+let arr = ['a', 'b', 'c', 'd', 'e'];
+let flag1 = false;
+for (let i of arr) {
+    if (i == 'c') {
+        flag1 = true;
+        break;
+    }
 }
-console.log(obj1);
-
-
-
-let obj2 = {x: 1, y: 2, z: 3};
-for (let key in obj2) {
-    obj2[key] += 1;
+if (flag1) {
+    console.log("+++");
+} else {
+    console.log('---');
 }
-console.log(obj2);
+
+
+
+let num = 9;
+for (let i = 2; i <= num; i++) {
+    if (num % 1 == 0 && num % num == 0 && num & i != 0) {
+        console.log("Число " + num + " простое");
+        break;
+    } else {
+        console.log("Число " + num + " не простое");
+        break;
+    }
+}
