@@ -1,9 +1,6 @@
-function func() {
-   return ["John", "Smit", "development", "programmer", 2000];
-}
+let arr = ["John", "Smit", "development", "programmer", 2000];
 
-let [name, surname, department, position, salary] = func();
+         let [, , department, position, ] = arr;
 
-
-console.log(surname);
-console.log(name);
+         console.log(department)
+         console.log(position)
