@@ -3,8 +3,8 @@ let options = {
     height: 500,
  };
 
- let { color = 'red', width, height} = options;
+ let { color:c = 'red', width:w, height:h} = options;
 
- console.log(color);
- console.log(width);
- console.log(height);
+ console.log(c);
+ console.log(w);
+ console.log(h);
