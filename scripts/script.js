@@ -1,13 +1,8 @@
-let arr = [..."12345"];
-         console.log(arr);
+func(1, 2, 3, 4, 5);
 
-         let arr2 = ["a", ..."12345"];
-         console.log(arr2);
 
-         let arr3 = [..."12345", ..."56789"];
-         console.log(arr3);
-
-         let arr41 = ["a", "b", "c"];
-         let arr42 = [...arr41, ..."12345"];
-
-         console.log(arr42);
+function func(a, b, ...rest) {
+   console.log(a);             
+   console.log(b);             
+   console.log(rest);         
+}
