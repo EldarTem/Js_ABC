@@ -1,49 +1,7 @@
-function func1([name, surname, department, position, salary]) {
-    console.log(name);
-    console.log(department);
- }
+let date = new Date();
 
- func1(["John", "Smit", "development", "programmer", 2000]);
+         console.log(`Текущий день: ${date.getDate()}`)
 
- function func2([name, surname, ...info]) {
-    console.log(name);
-    console.log(surname);
-    console.log(info);
- }
+         console.log(`Текущий месяц: ${date.getMonth() + 1}`)
 
- func2(["John", "Smit", "development", "programmer", 2000]);
-
- function func3([name, surname, department, position = "мид"]) {
-    console.log(name);
-    console.log(position);
-    console.log(department);
- }
-
- func3(["встань", "Smit", "да"]);
-
- function func(department, user, surname, year, month, day) {
-    console.log(department);
-    console.log(user);
-    console.log(surname);
-    console.log(year);
-    console.log(month);
-    console.log(day);
- }
-
- func("development", ...["John", "Smit"], ...[2018, 12, 31]);
-
- function func5({ color: c, width: w, height: h }) {
-    console.log(c);
-    console.log(w);
-    console.log(h);
- }
-
- func5({ color: "red", width: 400, height: 500 });
-
- function func6({ color: c = 'black', width: w, height: h }) {
-    console.log(c);
-    console.log(w);
-    console.log(h);
- }
-
- func6({width: 400, height: 500 });
+         console.log(`Текущий год: ${date.getFullYear()}`)
