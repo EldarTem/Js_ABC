@@ -1,14 +1,6 @@
-function func(...nums) {
-   let sum = 0;
-   let count = 0
+let arr = ["John", "Smit", "development", "programmer", 2000];
 
-   for (let num of nums) {
-      sum += num;
-      count++;
-   }
+let [name, surname, department, position, salary] = arr;
 
-   return sum / count;
-}
-
-let result = func(1, 2, 3, 4, 1, 1);
-console.log(result); 
+console.log(surname);
+console.log(name);
