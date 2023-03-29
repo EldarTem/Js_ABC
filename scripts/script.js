@@ -1,7 +1,9 @@
-let arr = ["John", "Smit", "development", "programmer", 2000];
+let arr = ["John", "Smit", "development"];
 
-         let [name, surname, ...info] = arr;
+let [name, surname, department, programmer = 'programmer', year = 200] = arr
 
-         console.log(name)
-         console.log(surname)
-         console.log(info)
+console.log(name)
+console.log(surname)
+console.log(department)
+console.log(programmer)
+console.log(year)
