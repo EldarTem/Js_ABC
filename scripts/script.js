@@ -1,8 +1,14 @@
-func(1, 2, 3, 4, 5);
+function func(...nums) {
+   let sum = 0;
+   let count = 0
 
+   for (let num of nums) {
+      sum += num;
+      count++;
+   }
 
-function func(a, b, ...rest) {
-   console.log(a);             
-   console.log(b);             
-   console.log(rest);         
+   return sum / count;
 }
+
+let result = func(1, 2, 3, 4, 1, 1);
+console.log(result); 
