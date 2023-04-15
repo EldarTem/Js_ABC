@@ -1,13 +1,15 @@
-let button1 = document.querySelector("#button1");
-button1.addEventListener("click", func1);
+let p1 = document.querySelector("#elem1");
+let p2 = document.querySelector("#elem2");
+let p3 = document.querySelector("#elem3");
+let p4 = document.querySelector("#elem4");
+let p5 = document.querySelector("#elem5");
 
-let button2 = document.querySelector("#button2");
-button2.addEventListener("click", func2);
+p1.addEventListener('click', func);
+p2.addEventListener('click', func);
+p3.addEventListener('click', func);
+p4.addEventListener('click', func);
+p5.addEventListener('click', func);
 
-function func1() {
-   console.log(1);
-}
-
-function func2() {
-   console.log(2);
+function func() {
+   console.log("message");
 }
