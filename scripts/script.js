@@ -1,21 +1,14 @@
-let div1 = document.querySelector("#elem1");
-let button1 = document.querySelector("#btn1");
+document.querySelector('#image').src = 'favicon.ico';
 
-button1.addEventListener("click", () => {
-   console.log(div1.className);
-});
+ /*
+ console.log(document.querySelector('#image2').src);
+ console.log(document.querySelector('#image2').width);
+ console.log(document.querySelector('#image2').height);
+ Ошибка состоит в том, что из-за поиска 
+ айди, браузер несколько раз выполняет одно и тоже действие несколько раз
+ */
 
-let div2 = document.querySelector("#elem2");
-let button2 = document.querySelector("#btn2");
-
-button2.addEventListener("click", () => {
-   div2.className = "main";
-});
-
-let div3 = document.querySelector("#elem3");
-let button3 = document.querySelector("#btn3");
-
-button3.addEventListener("click", () => {
- let arr = [div3.classList[0], div3.classList[1], div3.classList[2]]
- console.log(arr)
-});
+ let img2 = document.querySelector('#image2');
+ img2.src = 'favicon.ico'
+ img2.height = '100'
+ img2.width = '200'
