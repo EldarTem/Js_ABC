@@ -1,2 +1,13 @@
-let date = new Date(2020, 3, 0);
-console.log(date.getDate());
+function isLeap() {
+   if (new Date().getDate() == 29) {
+      return true;
+   } else {
+      return false;
+   }
+
+}
+if (isLeap == true) {
+   console.log("Високосный");
+} else {
+   console.log("Обычный");
+}
