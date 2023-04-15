@@ -1,7 +1,4 @@
-let elems = document.querySelectorAll("p");
+let parent = document.querySelector('#elem');
+let text = parent.firstElementChild.innerHTML;
 
-for (let elem of elems) {
-   elem.addEventListener("click", function () {
-      this.classList.add("colored");
-   });
-}
+console.log(text);
