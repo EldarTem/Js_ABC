@@ -1,3 +1,4 @@
-let date = new Date();
-let months = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
-console.log(`Текущий месяц - ${months[date.getMonth()]}`)
+let date = new Date(2022, 8, 15); 
+let day = date.getDay();
+let days = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+console.log(days[day]);
