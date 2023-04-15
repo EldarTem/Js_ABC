@@ -1,9 +1,20 @@
-let elems = document.querySelectorAll(".elem1");
-let btn = document.querySelector('#button1')
+let inputs = document.querySelectorAll(".input");
+         
 
-btn.addEventListener('click', () => {
-     console.log(elems)
-     for (let elem of elems) {
-          elem.textContent = 'text';
-     }
-})
+for (let input of inputs) {
+ input.addEventListener("blur", func);
+}
+
+function func() {
+   this.value = Number(this.value) + 1;
+}
+
+let text = document.querySelectorAll(".par");
+
+for (let elem of text) {
+ elem.addEventListener("click", func1);
+}
+
+function func1() {
+      this.textContent = Math.pow(Number(this.textContent), 2)
+}
