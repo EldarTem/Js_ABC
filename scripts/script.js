@@ -1,10 +1,15 @@
-let elems = document.querySelectorAll("p");
+let list = document.querySelectorAll(".list");
 
-for (let elem of elems) {
+for (let elem of list) {
    elem.addEventListener("click", func);
-}
+};
 
 function func() {
-   this.textContent += '!'
-   this.removeEventListener("click", func); 
+ if (Number(this.textContent) < 10) {
+      this.textContent = Number(this.textContent) + 1
+ } else {
+      this.removeEventListener('click', func);
+ }
+
+ 
 }
