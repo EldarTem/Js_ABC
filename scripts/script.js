@@ -1,8 +1,7 @@
-let btn = document.querySelector('#btn');
-let block = document.querySelector('#block');
+let elems = document.querySelectorAll("p");
 
-btn. addEventListener('click', () => {
- block.style.fontSize = '20px';
- block.style.cssFloat = 'left';
-})
-
+for (let elem of elems) {
+   elem.addEventListener("click", function () {
+      this.classList.add("colored");
+   });
+}
