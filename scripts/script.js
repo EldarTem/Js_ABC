@@ -1,17 +1,11 @@
-function func() {
-    console.log(this.value);
- }
- let elem1 = document.querySelector("#elem1");
- let elem2 = document.querySelector("#elem2");
- let elem3 = document.querySelector("#elem3");
- func.call(elem1);
- func.call(elem2);
- func.call(elem3);
- // 2
- let elem = document.querySelector("#elem");
+let elem = document.getElementById("elem");
 
- function func(surname, name) {
-    console.log(this.value + ", " + name + " " + surname);
- }
+function func(name, surname) {
+   console.log(this.value + ", " + name + " " + surname);
+}
 
- func.call(elem, "Smit", "John");
+// привязываем контекст выполнения функции func к элементу elem
+let funcBound = func.bind(elem);
+
+funcBound("John", "Smit"); // выводит 'привет, John Smit'
+funcBound("Eric", "Luis");
