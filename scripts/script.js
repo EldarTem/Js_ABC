@@ -1,9 +1,10 @@
-let number = 100;
-let timerId = setInterval(() => {
-   console.log(number);
-   number--;
+let number = 10;
 
+const timer = setInterval(() => {
+   console.log(number);
    if (number === 0) {
-      clearInterval(timerId);
+      clearInterval(timer);
+   } else {
+      number--;
    }
 }, 1000);
