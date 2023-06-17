@@ -1,23 +1,16 @@
-(function () {
-    let elem = document.querySelector("#div1"); // первый див
+window.onload = function () {
+    (function (selector1, selector2, selector3, selector4) {
+       let input1 = document.querySelector(selector1);
+       let input2 = document.querySelector(selector2);
+       let input3 = document.querySelector(selector3);
+       let button = document.querySelector(selector4);
 
-    function func(num) {
-       return num * num; // возведем в квадрат
-    }
-
-    elem.addEventListener("click", function () {
-       this.textContent = func(elem.textContent);
-    });
- })();
-
- (function () {
-    let elem = document.querySelector("#div2"); // второй див
-
-    function func(num) {
-       return num * num * num; // возведем в куб
-    }
-
-    elem.addEventListener("click", function () {
-       this.textContent = func(elem.textContent);
-    });
- })();
+       button.addEventListener("click", function () {
+          let sum =
+             Number(input1.value) +
+             Number(input2.value) +
+             Number(input3.value);
+          console.log(sum);
+       });
+    })("#input1", "#input2", "#input3", "#button");
+ };
