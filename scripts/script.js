@@ -1,19 +1,7 @@
 window.onload = function () {
-    function createTable(rows, cols, parent) {
-       let table = document.createElement("table");
+    let div = document.getElementById("elem");
 
-       for (let i = 0; i < rows; i++) {
-          let row = document.createElement("tr");
-          for (let j = 0; j < cols; j++) {
-             let cell = document.createElement("td");
-             cell.textContent = `${i + 1}.${j + 1}`;
-             row.appendChild(cell);
-          }
-          table.appendChild(row);
-       }
+    let table = createTable(3, 3);
 
-       parent.appendChild(table);
-    }
-    let parent = document.body;
-    createTable(3, 4, parent);
+    div.appendChild(table);
  };
