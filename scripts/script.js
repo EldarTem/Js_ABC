@@ -15,4 +15,5 @@
 
        res.textContent = num1 + num2 + num3;
     });
+    
  })("#parent");
