@@ -7,6 +7,7 @@ for (let elem of elems) {
      elem.textContent += '!'
 }
 
+
 let elems2 = document.getElementsByClassName('www');
 
 for (let elem of elems2) {
