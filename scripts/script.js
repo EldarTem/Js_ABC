@@ -1,3 +1,9 @@
-setInterval(function () {
-    console.log("hello");
- }, 3000);
+let number = 100;
+let timerId = setInterval(() => {
+   console.log(number);
+   number--;
+
+   if (number === 0) {
+      clearInterval(timerId);
+   }
+}, 1000);
