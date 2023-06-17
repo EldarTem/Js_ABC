@@ -1,14 +1,4 @@
-let elem = document.getElementById('elem');
-elem.textContent = 'text'
+let parent = document.querySelector('#parent');
 
-let elems = document.getElementsByTagName('li');
-
-for (let elem of elems) {
-     elem.textContent += '!'
-}
-
-let elems2 = document.getElementsByClassName('www');
-
-for (let elem of elems2) {
-     elem.innerHTML = '!!!';
-}
+elems1 = parent.querySelectorAll('www')
+elems2 = parent.querySelectorAll('ggg')
