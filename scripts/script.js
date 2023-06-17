@@ -1,14 +1,17 @@
-window.onload = function () {
-    "use strict";
+function func() {
+    console.log(this.value);
+ }
+ let elem1 = document.querySelector("#elem1");
+ let elem2 = document.querySelector("#elem2");
+ let elem3 = document.querySelector("#elem3");
+ func.call(elem1);
+ func.call(elem2);
+ func.call(elem3);
+ // 2
+ let elem = document.querySelector("#elem");
 
-    let elem = document.querySelector("#elem");
-    elem.addEventListener("blur", func);
+ function func(surname, name) {
+    console.log(this.value + ", " + name + " " + surname);
+ }
 
-    function func() {
-       alert(square.call(this));
-
-       function square() {
-          return this.value * this.value;
-       }
-    }
- };
+ func.call(elem, "Smit", "John");
