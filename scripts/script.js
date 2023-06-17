@@ -1,12 +1,19 @@
 window.onload = function () {
-    const myDiv = document.getElementById("myDiv");
-    const myParagraph = document.getElementById("myParagraph");
+    let elems = document.querySelectorAll("li");
 
-    for (let i = 0; i < 5; i++) {
-       const input = document.createElement("input");
-       input.addEventListener("blur", function () {
-          myParagraph.textContent += this.value + " ";
+    for (let elem of elems) {
+       elem.addEventListener("click", function () {
+          elem.remove();
        });
-       myDiv.appendChild(input);
     }
+    // 2
+    document
+       .getElementById("button")
+       .addEventListener("click", function () {
+          var parent = document.getElementById("parent");
+          var lastChild = parent.lastElementChild;
+          if (lastChild) {
+             parent.removeChild(lastChild);
+          }
+       });
  };
